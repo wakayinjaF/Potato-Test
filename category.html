@@ -647,7 +647,7 @@
         <p class="m-0 text-center">&copy; <a href="#">89.8 Bridge Fm</a>. All Rights Reserved. 
 		
 
-		Design by <a href="https://freewebsitecode.com">Wakayinja Frank</a><br>
+		<a href="https://freewebsitecode.com"></a><br>
     </p>
     </div>
     <!-- Footer End -->
@@ -662,7 +662,20 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
+    <script>
+        function updateDate() {
+            const today = new Date();
+            const formattedDate = today.toLocaleDateString(undefined, {
+                weekday: 'long', 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric'
+            });
+            document.getElementById('todayDate').textContent = formattedDate;
+        }
+    
+        updateDate();
+    </script>
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>
